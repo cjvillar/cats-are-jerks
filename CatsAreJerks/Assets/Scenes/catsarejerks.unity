@@ -331,6 +331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cat_mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 564dcae95ffd2174d984704c07ee717a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 564dcae95ffd2174d984704c07ee717a, type: 3}
 --- !u!1 &170076733
@@ -648,6 +652,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &512734179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512734176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a461267712de140a8b8078edad52c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object: {fileID: 512734176}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
