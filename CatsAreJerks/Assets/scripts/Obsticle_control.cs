@@ -14,7 +14,6 @@ public class ObsticleControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
         if (transform.position.y < -10) {
            Destroy(Obsticle);
            Debug.Log("DESTROY!");
