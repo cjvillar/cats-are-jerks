@@ -736,6 +736,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
+  player: {fileID: 0}
 --- !u!4 &175147228
 Transform:
   m_ObjectHideFlags: 0
@@ -912,6 +913,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
+  player: {fileID: 0}
 --- !u!114 &308360824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,6 +1010,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
+  player: {fileID: 0}
 --- !u!850595691 &481223275
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1164,6 +1167,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
+  player: {fileID: 0}
 --- !u!1 &512734176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1c344bdae15960747be257eed262e226, type: 3}
@@ -1990,6 +1994,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
+  player: {fileID: 0}
 --- !u!4 &872223290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62acb6fc6f231494c95bc2abda9ebdc6, type: 3}
@@ -2720,6 +2725,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1301907309}
+  player: {fileID: 0}
 --- !u!1 &1301907309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2780,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1301907309}
+  player: {fileID: 0}
 --- !u!4 &1312232381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3858995680632013777, guid: 51a084e4035b24e76997744a50c711d4, type: 3}
@@ -3004,6 +3011,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1301907309}
+  player: {fileID: 0}
 --- !u!114 &1589504720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3416,6 +3424,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
+  player: {fileID: 0}
 --- !u!1001 &1721979650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3572,6 +3581,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
+  player: {fileID: 0}
 --- !u!1 &1781680203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
@@ -3824,6 +3834,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 1912227022}
   gameOverScreen: {fileID: 1301907309}
+  player: {fileID: 807251021}
 --- !u!1001 &1936154555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4051,6 +4062,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
+  player: {fileID: 0}
 --- !u!1 &2005901447
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,13 +29,13 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         // move the vehicle left and right
         transform.Rotate(Vector3.up * turnSpeed * horizontalInput * Time.deltaTime);
-        
-        if (transform.position.y < -10 && ! gameOver.gameOverScreen)
+
+        if (transform.position.y < -10)
         {
             Destroy(gameObject);
             gameOver.gameOver();
-            
         }
+             
 
     }
 

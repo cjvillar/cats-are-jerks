@@ -21,10 +21,13 @@ public class Objects : MonoBehaviour
         {
             Destroy(Object);
             score.addScore();
-            if (score.playerScore == 7)
-            {
-                score.gameOver();     
-            }
+            score.win();
+            //if (score.playerScore == 7)
+            //{
+                
+            //    //player.gameObject.GetComponent<PlayerController>().enabled = false;
+            //    score.gameOver();
+            //}
 
 
         }

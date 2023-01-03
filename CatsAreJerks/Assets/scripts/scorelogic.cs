@@ -10,6 +10,7 @@ public class scorelogic : MonoBehaviour
     public int playerScore;
     public TextMeshProUGUI scoreText;
     public GameObject gameOverScreen;
+    public PlayerController player;
 
     [ContextMenu("Increase Score")]
     public void addScore()
@@ -22,12 +23,22 @@ public class scorelogic : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
     public bool gameOver()
     {
         gameOverScreen.SetActive(true);
         return true;
-        
+
     }
+    public void win() {
+        if (playerScore == 7)
+        {
+            player.gameObject.GetComponent<PlayerController>().enabled = false;
+            gameOver();
+        }
+
+    }
+
+
+    
     
 }
