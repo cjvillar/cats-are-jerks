@@ -15,10 +15,21 @@ public class Objects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -5) 
-        { 
-          Destroy(Object);
-          score.addScore();
+        if (transform.position.y < -5)
+        {
+            Destroy(Object);
+            score.addScore();
+
+        }
+        else Win();
+                
+    }
+
+    public void Win()
+    {
+        if (score.playerScore == 7)
+        {
+            score.gameOver();
 
         }
     }

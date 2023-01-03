@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class scorelogic : MonoBehaviour
 {
@@ -15,16 +16,17 @@ public class scorelogic : MonoBehaviour
     {
         playerScore = playerScore + 1;
         scoreText.text = playerScore.ToString();
-        //scoreText.text = string.Format("Score: {0}", playerScore);
     }
 
-    public void restartGame() 
+    public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void gameOver()
-    { 
+    {
         gameOverScreen.SetActive(true);
+        
     }
+    
 }

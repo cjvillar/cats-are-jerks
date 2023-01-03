@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
     private float timeValue = 61;
     public TextMeshProUGUI timerText;
+    public scorelogic gameOver;
     void Update()
     {   
         if (timeValue > 0)
@@ -16,6 +17,7 @@ public class Timer : MonoBehaviour
         else
         {
             timeValue = 0;
+            gameOver.gameOver();
         }
         DisplayTime(timeValue);
     }
@@ -33,13 +35,6 @@ public class Timer : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    void TimeUp() { 
-        
-        if (timeValue == 0)
-        {
-            Debug.Log("TIMES UP!!!"); 
-        }
-    
-    }
+     
 
 }
