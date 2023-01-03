@@ -7,3 +7,11 @@ The game is a work in progress (like so many others), so it may change.
 
 
 <img src="https://github.com/cjvillar/cats-are-jerks/blob/main/md_assets/cats_are_jerks.png"  width="600" height="300">
+
+
+#### Here are some of the assets I made in Aesprite/PicoCad and then Imported into Unity:
+<p float="left">
+<img src="https://github.com/cjvillar/cats-are-jerks/blob/main/md_assets/soda.gif"  width="150" height="150">
+<img src="https://github.com/cjvillar/cats-are-jerks/blob/main/md_assets/candy_box.gif"  width="150" height="150">
+<img src="https://github.com/cjvillar/cats-are-jerks/blob/main/md_assets/Iphone_3d.gif"  width="150" height="150">
+</p>
