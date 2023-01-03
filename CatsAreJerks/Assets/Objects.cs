@@ -9,7 +9,6 @@ public class Objects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //score = score.GetComponent<scorelogic>();
         score = GameObject.FindGameObjectWithTag("Score").GetComponent<scorelogic>();
     }
 
@@ -17,7 +16,8 @@ public class Objects : MonoBehaviour
     void Update()
     {
         if (transform.position.y < -5) 
-        { Destroy(Object);
+        { 
+          Destroy(Object);
           score.addScore();
 
         }
