@@ -6,6 +6,8 @@ public class Objects : MonoBehaviour
 {
     public GameObject Object;
     public scorelogic score;
+    private Timer time;
+    private PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,18 +21,15 @@ public class Objects : MonoBehaviour
         {
             Destroy(Object);
             score.addScore();
+            if (score.playerScore == 7)
+            {
+                score.gameOver();     
+            }
+
 
         }
-        else Win();
-                
+        
+  
     }
-
-    public void Win()
-    {
-        if (score.playerScore == 7)
-        {
-            score.gameOver();
-
-        }
-    }
+    
 }

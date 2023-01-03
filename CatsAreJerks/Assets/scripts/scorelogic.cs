@@ -23,9 +23,10 @@ public class scorelogic : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void gameOver()
+    public bool gameOver()
     {
         gameOverScreen.SetActive(true);
+        return true;
         
     }
     

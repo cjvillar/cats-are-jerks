@@ -11,12 +11,13 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float forwardInput;
     public scorelogic gameOver;
+   
 
 
     // Start is called before the first frame update
     void Start()
     {
-      
+       
     }
 
     // Update is called once per frame
@@ -29,9 +30,8 @@ public class PlayerController : MonoBehaviour
         // move the vehicle left and right
         transform.Rotate(Vector3.up * turnSpeed * horizontalInput * Time.deltaTime);
         
-        if (transform.position.y < -10 )
+        if (transform.position.y < -10 && ! gameOver.gameOverScreen)
         {
-            //Debug.Log("GAME OVER!");
             Destroy(gameObject);
             gameOver.gameOver();
             

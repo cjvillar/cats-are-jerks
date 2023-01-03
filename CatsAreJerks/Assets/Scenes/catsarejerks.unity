@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: soda
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1c344bdae15960747be257eed262e226, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1c344bdae15960747be257eed262e226, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -805,6 +809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ipnone_obj
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 62acb6fc6f231494c95bc2abda9ebdc6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 62acb6fc6f231494c95bc2abda9ebdc6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.32
@@ -1207,20 +1215,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &512734179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512734176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a461267712de140a8b8078edad52c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Object: {fileID: 512734176}
-  score: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,6 +1753,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
       propertyPath: m_Name
       value: cand_box (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2332,6 +2330,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
       propertyPath: m_Name
       value: cand_box
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2927,6 +2929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cand_box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 68d89df1f7a0c7e41b808e635bd938ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1
@@ -3238,6 +3244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: soda (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1c344bdae15960747be257eed262e226, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1c344bdae15960747be257eed262e226, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -3514,7 +3524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a461267712de140a8b8078edad52c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Object: {fileID: 1734715411}
+  Object: {fileID: 0}
   score: {fileID: 0}
 --- !u!1 &1750269831
 GameObject:
@@ -3934,7 +3944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0:00
+  m_text: 1:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 477dbbe088fd322429bf61ac31034385, type: 2}
   m_sharedMaterial: {fileID: -1201465555002036613, guid: 477dbbe088fd322429bf61ac31034385, type: 2}
@@ -4025,6 +4035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 1961610319}
   gameOver: {fileID: 1695170811}
+  player: {fileID: 807251021}
 --- !u!114 &1961610322
 MonoBehaviour:
   m_ObjectHideFlags: 0

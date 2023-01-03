@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     private float timeValue = 61;
     public TextMeshProUGUI timerText;
     public scorelogic gameOver;
+    public PlayerController player;
     void Update()
     {   
         if (timeValue > 0)
@@ -17,7 +18,9 @@ public class Timer : MonoBehaviour
         else
         {
             timeValue = 0;
+            player.gameObject.GetComponent<PlayerController>().enabled = false;
             gameOver.gameOver();
+            
         }
         DisplayTime(timeValue);
     }
