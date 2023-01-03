@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a461267712de140a8b8078edad52c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Object: {fileID: 805301933}
+  Object: {fileID: 684281194}
   score: {fileID: 0}
 --- !u!1 &748762180 stripped
 GameObject:
@@ -3524,7 +3524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a461267712de140a8b8078edad52c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Object: {fileID: 0}
+  Object: {fileID: 1734715411}
   score: {fileID: 0}
 --- !u!1 &1750269831
 GameObject:
