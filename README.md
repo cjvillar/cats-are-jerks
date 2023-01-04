@@ -1,7 +1,12 @@
 # [cats-are-jerks](https://www.cjvillarreal.com/cats-are-jerks/) 
 ### My first Unity project
-I created some pixel art which then inspired 3d objects. After a bunch of coffee, I tried to make a game in Unity. Click the header to Enjoy!
+I created some pixel art which then inspired 3d objects. After a bunch of coffee, I tried to make a game in Unity.
 The game is a work in progress (like so many others), so it may change. 
+
+ #### Click the header to Enjoy!
+ Forward: <kbd>S</kbd>, Back: <kbd>W</kbd>, Left: <kbd>A</kbd>, Right: <kbd>D</kbd>
+
+
 
 *I do not think all cats are jerks.
 
