@@ -1,0 +1,9 @@
+# picocad material
+newmtl cat_v3_mtl
+ka 1.000000 1.000000 1.000000
+kd 1.000000 1.000000 1.000000
+ks 0.000000 0.000000 0.000000
+tr 1.000000
+illum 1
+ns 0.000000
+map_kd cat_v3_tex.png
