@@ -25,10 +25,11 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
-        //move the vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        // move the vehicle left and right
+        //move the cat forward fix by seting x axis translate to 'right'
+        transform.Translate(Vector3.right * Time.deltaTime * speed * forwardInput);
+        // move the cat left and right
         transform.Rotate(Vector3.up * turnSpeed * horizontalInput * Time.deltaTime);
+        
 
         if (transform.position.y < -10)
         {
