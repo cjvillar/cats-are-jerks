@@ -1078,7 +1078,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
-  player: {fileID: 0}
+  player: {fileID: 362211558}
 --- !u!850595691 &481223275
 LightingSettings:
   m_ObjectHideFlags: 0
