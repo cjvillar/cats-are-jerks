@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < - 10)
         {    
             loser= true;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             gameOver.gameOver();
         }
         if (Input.GetKeyDown(KeyCode.Space))
@@ -60,8 +60,6 @@ public class PlayerController : MonoBehaviour
                 meow.Play();
             }
         }
-
-        
 
     }
 

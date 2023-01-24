@@ -34,6 +34,8 @@ public class Timer : MonoBehaviour
         if (timeToDisplay < 0 || score.winner || player.loser)
         {
             timeToDisplay = 0;
+            gameOver.gameOverScreen.gameObject.SetActive(false);
+            
         }
 
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);

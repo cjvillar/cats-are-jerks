@@ -19,16 +19,9 @@ public class Objects : MonoBehaviour
     {
         if (transform.position.y < -5)
         {
-            Destroy(Object);
+            gameObject.SetActive(false);
             score.addScore();
             score.win();
-            //if (score.playerScore == 7)
-            //{
-                
-            //    //player.gameObject.GetComponent<PlayerController>().enabled = false;
-            //    score.gameOver();
-            //}
-
 
         }
         
