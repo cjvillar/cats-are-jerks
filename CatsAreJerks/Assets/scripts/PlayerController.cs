@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     private float forwardInput;
     public scorelogic gameOver;
     private Animator animator;
+    public bool loser = false;
+
+    [SerializeField] public AudioSource meow;
    
 
 
@@ -19,6 +22,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
        animator= GetComponent<Animator>();
+       meow.Play();    
+        
     }
 
     // Update is called once per frame
@@ -30,6 +35,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         // move the cat left and right
         transform.Rotate(Vector3.up * turnSpeed * horizontalInput * Time.deltaTime);
+        
 
         if ( forwardInput != 0)
         {
@@ -40,12 +46,22 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsMoving", false);
         }
 
-        if (transform.position.y < -10)
-        {
+
+        if (transform.position.y < - 10)
+        {    
+            loser= true;
             Destroy(gameObject);
             gameOver.gameOver();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (!meow.isPlaying)
+            {
+                meow.Play();
+            }
+        }
 
+        
 
     }
 

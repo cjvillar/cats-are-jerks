@@ -956,6 +956,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!4 &175147228
 Transform:
   m_ObjectHideFlags: 0
@@ -1252,6 +1254,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!114 &308360824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,6 +1334,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!114 &362211558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,6 +1349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 438888819}
+  loser: 0
+  meow: {fileID: 0}
 --- !u!64 &362211559
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1457,7 +1465,9 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
-  player: {fileID: 362211558}
+  player: {fileID: 1746435295}
+  time: {fileID: 1961610321}
+  winner: 0
 --- !u!4 &444334301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4185949468782880740, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -1670,6 +1680,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!4 &502045115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8061397675399933990, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -1763,6 +1775,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1848,6 +1861,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1746435292}
+--- !u!82 &534669907
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 147f6f79f22d46c4fa5630ba52f43c4d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &540061896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4497540749602589678, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -2740,6 +2849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 438888819}
+  loser: 0
+  meow: {fileID: 0}
 --- !u!114 &807251022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2756,6 +2867,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!4 &814447630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1741599466265571285, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -3697,6 +3810,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1301907309}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!4 &1196894734 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6651073790436109132, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -3821,7 +3936,9 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1301907309}
-  player: {fileID: 0}
+  player: {fileID: 1746435295}
+  time: {fileID: 1961610321}
+  winner: 0
 --- !u!4 &1307499582 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5765499048770374162, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -4010,9 +4127,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414852481}
   serializedVersion: 2
-  m_Mass: 20
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
+  m_Mass: 1
+  m_Drag: 0.1
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4395,6 +4512,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1301907309}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!114 &1589504720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4463,6 +4582,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 438888817}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!114 &1593127012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4476,6 +4597,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 438888819}
+  loser: 0
+  meow: {fileID: 0}
 --- !u!64 &1593127013
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5046,7 +5169,9 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
-  player: {fileID: 0}
+  player: {fileID: 1746435295}
+  time: {fileID: 0}
+  winner: 0
 --- !u!4 &1704657093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2318780448639591857, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -5219,6 +5344,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 438888819}
+  loser: 0
+  meow: {fileID: 1746435300}
 --- !u!137 &1746435296
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5562,13 +5689,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746435292}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 80
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 96
   m_CollisionDetection: 0
 --- !u!23 &1746435298
 MeshRenderer:
@@ -5627,6 +5754,104 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 0}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
+--- !u!82 &1746435300
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746435292}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4844c46e83b0e0c40a5ae782b9e32fb7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 0.87
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1750269831
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,6 +5899,8 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
   player: {fileID: 0}
+  time: {fileID: 0}
+  winner: 0
 --- !u!4 &1750960164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2246859747276345416, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -6056,7 +6283,9 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 1912227022}
   gameOverScreen: {fileID: 1301907309}
-  player: {fileID: 362211558}
+  player: {fileID: 1746435295}
+  time: {fileID: 1961610321}
+  winner: 0
 --- !u!4 &1918499913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992716959490400444, guid: 081647c9894470f428983b0a98b85282, type: 3}
@@ -6318,7 +6547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 1961610319}
   gameOver: {fileID: 1695170811}
-  player: {fileID: 362211558}
+  player: {fileID: 1746435295}
+  score: {fileID: 1912227024}
 --- !u!114 &1961610322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6334,7 +6564,9 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 1695170809}
-  player: {fileID: 0}
+  player: {fileID: 1746435295}
+  time: {fileID: 1961610321}
+  winner: 0
 --- !u!4 &1962781377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7902685524843273158, guid: 081647c9894470f428983b0a98b85282, type: 3}

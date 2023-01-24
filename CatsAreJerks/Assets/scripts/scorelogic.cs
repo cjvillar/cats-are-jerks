@@ -11,7 +11,9 @@ public class scorelogic : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public GameObject gameOverScreen;
     public PlayerController player;
-
+    public Timer time;
+    public bool winner = false;
+   
     [ContextMenu("Increase Score")]
     public void addScore()
     {
@@ -32,6 +34,7 @@ public class scorelogic : MonoBehaviour
     public void win() {
         if (playerScore == 7)
         {
+            winner = true;
             player.gameObject.GetComponent<PlayerController>().enabled = false;
             gameOver();
         }
