@@ -4,7 +4,7 @@ I created some pixel art which then inspired 3d objects. After a bunch of coffee
 The game is a work in progress (like so many others), so it may change. 
 
  #### Click the header to Enjoy!
- Forward: <kbd>w</kbd>, Back: <kbd>s</kbd>, Left: <kbd>A</kbd>, Right: <kbd>D</kbd>
+ Forward: <kbd>w</kbd>, Back: <kbd>s</kbd>, Left: <kbd>A</kbd>, Right: <kbd>D</kbd>,  Meow: <kbd>Space</kbd>
 
 
 
