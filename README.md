@@ -11,7 +11,7 @@ The game is a work in progress (like so many others), so it may change.
 *I do not think all cats are jerks.
 
 
-<img src="https://github.com/cjvillar/cats-are-jerks/blob/main/md_assets/cats_are_jerks%20(2).png"  width="600" height="300">
+<img src="https://github.com/cjvillar/cats-are-jerks/blob/main/md_assets/crj_4.png"  width="600" height="400">
 
 
 #### Here are some of the assets I made in Aesprite/PicoCad and then Imported into Unity:
